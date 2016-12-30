@@ -1,0 +1,135 @@
+a {
+  outline: none;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+ul, ol{
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  font-size: 16px;
+  letter-spacing: 0.2;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.tbl{
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.tbl-cell{
+  display: table-cell;
+}
+
+.va_midle{
+  vertical-align: middle;
+}
+
+
+.container{
+  max-width: 1140px;
+  width: 100%;
+}
+
+.section{
+  padding: 80px 0;
+}
+
+#home_content{
+  background: url("../images/house_print.png") #fcfcfc no-repeat left 120px;
+
+  .content_article{
+    text-align: right;
+    padding-left: 195px;
+  }
+}
+
+#slider{
+  margin-top: 6px;
+  height: 652px;
+  overflow: hidden;
+
+  .slider{
+    li{
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+#cement_process{
+  background: $brandcolor_primary;
+  text-align: center;
+}
+
+#home_news{
+
+  .home_news_container, .quote_container{
+    padding: 80px;
+    vertical-align: middle;
+  }
+
+  .quote_container{
+    width: 40%;
+    background: $brandcolor_secondary;
+  }
+
+  .home_news_container{
+    width: 60%;
+  }
+}
+
+//Slider
+.bx-wrapper{
+  position: relative;
+  .bx-controls-direction{
+    display: none;
+  }
+  
+  .bx-controls{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 40px;
+    z-index: 100;
+
+    .bx-pager{
+      text-align: center;
+      font-size: 0;
+
+      .bx-pager-item{
+        display: inline-block;
+        margin: 0 5px;
+        width: 40px;
+        height: 6px;
+
+
+
+        a{
+          background: #fff;
+          cursor: pointer;
+          display: block;
+          height: 6px;
+          @include transition(bakground 0.33s ease-in);
+
+          &.active, &:hover{
+            background: $brandcolor_secondary;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

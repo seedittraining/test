@@ -1,0 +1,7 @@
+#header{
+  background: $brandcolor_primary;
+  padding: 15px 0;
+  width: 100%;
+  border-bottom: 6px solid #fff;
+  @include box-shadow(0 0 0 6px $brandcolor_secondary);
+}

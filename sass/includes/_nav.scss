@@ -1,0 +1,28 @@
+.nav_wrapper{
+  float: right;
+  padding: 9px 0;
+  font-size: 0;
+
+  nav#main, #social_icons{
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+  }
+  
+  nav#main{
+    ul{
+      li{
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 10px;
+
+        a{
+          color: #fff;
+        }
+      }
+    }
+  }
+  #social_icons{
+
+  }
+}
